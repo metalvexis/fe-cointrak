@@ -23,11 +23,14 @@ function App() {
                 : "bg-gray-300 text-gray-800"
             }`}
           >
-            {name[0]}
+            {symbol}
           </button>
         ))}
       </div>
       <div className="flex space-x-4">
+        <span className="text-2xl font-bold text-blue-500">
+          1 {ticker[currentTicker][0]} =
+        </span>
         <CoinPrice coinid={ticker[currentTicker][1]} />
       </div>
     </div>
